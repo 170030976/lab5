@@ -1,0 +1,31 @@
+Sample HTML:
+
+<html>
+<title> Hell World </title>
+<body>
+<h1> Hi  Welcome to DevOps Section2 </h1>
+</body>
+</html>
+
+make sure your file should have atleast one <h> tags 
+
+push to git hub repository
+
+Open dev.azure.com
+
+click on start free
+
+go to project
+
+click on pipleline
+
+Click on new -> new Build pipeline -> Click on github(YAML)
+
+Select the desired repository where html file was stored
+
+In the configure menu select html5, to configure your pipeline
+
+you will find the default code, move the cursor to the end of the line (mostly at line 19) and add following code:
+
+- script: python -mhtmllib "simple.html"
+
